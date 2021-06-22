@@ -1,5 +1,5 @@
 # A turret made with opencv and a raspberry pi. 
-The initial goal of this project was to recreate the turrets from the games Portal 1 and Portal 2, however it was shortened to creating a fiber optic christmas tree that uses their voice lines when it detects a person.
+This was a project I undertook my Freshman year of High School. The initial goal was to recreate the turrets from the games Portal 1 and Portal 2, however it was shortened to creating a fiber optic christmas tree that uses their voice lines when it detects a person.
 ## Hardware
 The physical components of this project are as follows:
 -A raspberry pi zero
