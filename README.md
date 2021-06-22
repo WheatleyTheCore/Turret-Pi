@@ -1,18 +1,18 @@
 # A turret made with opencv and a raspberry pi. 
-This started out as a full portal turret, however it has now been shortened to a fiber optic christmas tree that has been given the ability to detect faces and respond verbally in a similar way to the turrets from the game Portal 1 and 2.
+The initial goal of this project was to recreate the turrets from the games Portal 1 and Portal 2, however it was shortened to creating a fiber optic christmas tree that uses their voice lines when it detects a person.
 ## Hardware
 The physical components of this project are as follows:
 -A raspberry pi zero
--A circuit board that transforms audio into light.
--A speaker(1 watt, 8 ohms, harvester from an old radio)
--Old earbuds, with the two speakers removed and wires exposed)
+-A circuit board for sound-reactive lights.
+-A speaker(1 watt, 8 ohms, harvested from an old radio)
+-A camera
 
 ## The build process
 ### Setting up opencv on the pi
-To set up opencv on the pi, the opencv and opencv_contrib repos were cloned from github.
-Then, a build folder was made, and cmake was used to create the build files. It was then built.
-While building, keep one or more fans aimed directly at pi until build was finished. The build process is very cpu intensive 
-and can take up to 20 hours on the pi zero. The fans will reduce the risk of overheating.
+To set up OpenCV on the Raspberry Pi, the opencv and opencv_contrib repos were cloned from github.
+Then, a build folder was made, and cmake was used to create the build files.
+
+While building I kept a fan pointed at the Rasperry Pi to avoid overheating. The build process can take up to 20 hours on the Raspberry Pi Zero. T
 For more details see the articles referenced below.
 
 ### The sound reactive circuit 
@@ -25,13 +25,13 @@ Link to circuit: https://www.instructables.com/topics/Help-with-TIP-31-Sound-Rea
 
 
 ## Articles referenced:
-### A good example of opencv on pi
+### A good example of OpenCV on Raspberry Pi
 https://github.com/Grayson112233/facerec-door-lock/blob/master/hardware.cpp
-### Installation of opencv on pi
+### Installation of OpenCV on Raspberry Pi
 https://www.alatortsev.com/2018/09/05/installing-opencv-3-4-3-on-raspberry-pi-3-b/
-### Increase fr
+### Increase frame rate
 http://answers.opencv.org/question/29957/highguivideocapture-buffer-introducing-lag/
-### Detection docs 
+### Facial Detection Docs 
 https://docs.opencv.org/3.4.3/d7/d8b/tutorial_py_face_detection.html
 ### Tracking tutorial for optimization 
 https://www.google.com/amp/s/www.learnopencv.com/object-tracking-using-opencv-cpp-python/amp/
